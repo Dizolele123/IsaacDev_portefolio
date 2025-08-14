@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogues Design</title>
+<style>
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1E1E2F;
+    color: white;
+}
+
+/* HEADER */
+.contener {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E2F;
+    padding: 10px 20px;
+}
+
+.contener img {
+    max-width: 40px;
+    height: auto;
+}
+
+.contener p {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.dflex {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dflex li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dflex li a:hover {
+    color: #ffe66D;
+}
+
+.contener button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contener button:hover {
+    background-color: #28a745;
+}
+
+.contener button a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* CATALOGUE IMAGES */
+.im {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 10px 40px;
+    padding: 0 10px;
+}
+
+.image {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #28a745;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.image strong {
+    color: orangered;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.image:hover {
+    background-color: #28a745;
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1E1E2F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px 10px;
+}
+
+.div3 {
+    background-color: coral;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.div3 strong {
+    color: white;
+}
+
+.blanc {
+    color: white;
+    font-weight: bold;
+}
+
+.blanc a {
+    color: #ffe66D;
+    text-decoration: none;
+}
+
+.blanc a:hover {
+    color: white;
+}
+
+.alu strong {
+    color: coral;
+}
+
+.alu p {
+    color: white;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.alo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sd a {
+    color: #ffe66D;
+    text-decoration: none;
+}
+
+.sd a:hover {
+    color: white;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .im {
+        gap: 15px;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .div3 {
+        width: 90%;
+    }
+
+    .contener {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dflex {
+        flex-direction: column;
+    }
+
+    .alo {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+</style>
+</head>
+<body>
+<header class="contener">
+    <img src="telephone.png" alt="tel">
+    <p>+242 06 490 59 08</p>
+    <ul class="dflex">
+        <li><a href="Mon_portefolio.html">ACCUEIL</a></li>
+        <li><button><a href="concoit.html">Conçoit moi un design</a></button></li>
+    </ul>
+    <p>Rejoignez-nous sur</p>
+    <img src="facebook.png" width="25" height="25">
+    <img src="whatsapp.png" width="25" height="25">
+</header>
+
+<section class="im">
+    <article class="image"><img src="im25.jpg" alt=""><strong>5000frs</strong></article>
+    <article class="image"><img src="im22.jpg" alt=""><strong>5000frs</strong></article>
+    <article class="image"><img src="im19.jpg" alt=""><strong>5000frs</strong></article>
+    <article class="image"><img src="im18.jpg" alt=""><strong>5000frs</strong></article>
+</section>
+
+<section class="im">
+    <article class="image"><img src="im17.jpg" alt=""><strong>5000frs</strong></article>
+    <article class="image"><img src="im16.jpg" alt=""><strong>5000frs</strong></article>
+    <article class="image"><img src="im23.jpg" alt=""><strong>5000frs</strong></article>
+    <article class="image"><img src="im24.jpg" alt=""><strong>5000frs</strong></article>
+</section>
+
+<footer>
+    <article class="div3">
+        <p class="blanc">CATALOGUE</p>
+        <img src="im2.jpg" width="250" height="200"><br>
+        <a href="catalogue.html">Voir plus</a>
+    </article>
+
+    <article class="div3">
+        <p class="blanc">MES CONCEPTIONS</p>
+        <p class="sd"><a href="site.html">Voir les sites développés</a></p>
+        <p class="sd"><a href="catalogue.html">Design Conçus</a></p>
+        <p><strong>Ma mission :</strong> Développer le numérique en optimisant la gestion de votre entreprise via les systèmes informatiques.</p>
+    </article>
+
+    <article class="div3">
+        <p class="blanc">ME JOINDRE</p>
+        <p class="alu">
+            <strong>Nom :</strong> DIZOLELE NKOUNGA<br>
+            <strong>Prénom :</strong> Isaac Rabbi<br>
+            <strong>Tel :</strong> 06 490 59 08
+        </p>
+        <p class="alo">
+            <img src="telephone.png" width="30"> 06 490 59 08
+            <img src="whatsapp.png" width="30"> 06 490 59 08
+        </p>
+        <p class="alo">
+            <img src="instagram.png" width="30"> 123.IsaacDev
+            <img src="facebook.png" width="30"> IsaacDev
+        </p>
+        <p><img src="mail.png" width="30"> isaacdizolelenkounga@gmail.com</p>
+    </article>
+</footer>
+</body>
+</html>
