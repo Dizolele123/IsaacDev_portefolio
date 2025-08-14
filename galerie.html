@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogues</title>
+</head>
+<body>
+  <header class="contener">
+        <img src="telephone.png" width="30" height="30"   >     
+        <p> + 242 06 490 59 08 </p>
+        <ul class="dflex">
+            <li> <a href="Mon_portefolio.html">ACCUEIL</a></li>
+            <li><button><a href="galerie.html">catalogues</a></button></li>
+        </ul>
+         <p>Rejoignez-nous sur  </p> <img src="facebook.png" width="25" height="25"> <img src="whatsapp.png" width="25" height="25">
+       </header>  
+      
+      <section class="bloque">
+        <div class="nom">
+            <h2>Mon Catalogues</h2>
+        </div>
+      </section><br><br><br><br><br>
+
+        <h2>GRAPHIC DESIGN</h2><br><br>
+  
+        <section class="diaporama">
+            <div class="diapo"><img src="im25.jpg" alt=""></div>
+            <div class="diapo"><img src="im17.jpg" alt=""></div>
+            <div class="diapo"><img src="im18.jpg" alt=""></div>
+            <div class="diapo"><img src="im19.jpg" alt=""></div>
+            <div class="diapo"><img src="im20.jpg" alt=""></div>
+            <div class="diapo"><img src="im22.jpg" alt=""></div>
+            <div class="diapo"><img src="im21.jpg" alt=""></div>
+            <div class="diapo"><img src="im23.jpg" alt=""></div>
+        </section><br><br><br><br>
+
+        <H2>SITES WEB</H2><br><br>
+
+        <section class="diaporama">
+            <div class="diapo"><img src="im6.jpg" alt=""></div>
+            <div class="diapo"><img src="im7.jpg" alt=""></div>
+            <div class="diapo"><img src="im8.jpg" alt=""></div>
+            <div class="diapo"><img src="im9.jpg" alt=""></div>
+            <div class="diapo"><img src="im10.jpg" alt=""></div>
+        </section><br><br><br>
+
+    <footer class="Pied_de_Page">
+        <div class="mon_bloc">
+            <div class="social">
+                <h3> Joindre Mes Comptes </h3>
+                <ul class="logo">
+                    <li><a href="www.instagram"><img src="instagram.png" alt=""></li></a>
+                    <li><a href="www.facebook.com"><img src="facebook.png" alt="" ></li></a>
+                    <li><a href="www.whatsapp.com"><img src="whatsapp.png" alt="" ></li></a>
+                </ul>
+        </div>
+            <div class="hours">
+                <h3>  Prendre Rendez-vous </h3>
+                <ul>
+                    <li><a href="concoit.html"> Pour un site </a> </li>
+                    <li><a href="concoit2.html"> Pour un design </a> </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="mot"> isaacdizolelenkounga@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style type="text/css">
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E2F;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* HEADER */
+.contener {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E1E2F;
+  color: white;
+  padding: 10px 20px;
+}
+
+.contener img {
+  max-width: 40px;
+  height: auto;
+}
+
+.contener p {
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
+.dflex {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.dflex li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dflex li a:hover {
+  color: #ffe66D;
+}
+
+.contener button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.contener button:hover {
+  background-color: #28a745;
+}
+
+.contener button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* BLOC TITRE */
+.bloque {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(im2.jpg) center/cover no-repeat;
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.nom h2 {
+  font-size: 60px;
+  color: #cad5e4ec;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: orangered;
+  margin: 40px 0 20px;
+}
+
+/* DIAPORAMA */
+.diaporama {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.diapo {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.diapo img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+.Pied_de_Page {
+  background-color: #1E1E2F;
+  padding: 20px;
+  color: white;
+}
+
+.mon_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.mon_bloc h3 {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  height: 25px;
+  width: 25px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .nom h2 {
+    font-size: 40px;
+  }
+
+  .contener {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dflex {
+    flex-direction: column;
+  }
+
+  .diapo img {
+    max-width: 100%;
+  }
+
+  .mon_bloc {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nom h2 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+
+</style>
