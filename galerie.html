@@ -71,44 +71,46 @@
 </html>
 
 <style type="text/css">
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #1E1E2F;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-}
-
-/* HEADER */
-.contener {
+    body{
+        background-color: #1E1E2F ;
+    }
+    .contener {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #1E1E2F;
-  color: white;
-  padding: 10px 20px;
+  color: gray;
+  padding: 10px 50px;
 }
 
 .contener img {
-  max-width: 40px;
+  max-width: 50px;
   height: auto;
 }
 
 .contener p {
+  flex: 1 1 200px;
+  text-align: center;
+  color: white;
   font-size: 14px;
   margin: 5px 10px;
 }
 
 .dflex {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
   list-style: none;
+  flex: 2 1 400px;
   padding-left: 0;
+  margin: 5px 0;
+}
+
+.dflex li {
+  margin: 0 10px;
 }
 
 .dflex li a {
@@ -122,120 +124,274 @@ body {
 }
 
 .contener button {
-  background: transparent;
+  background-color: transparent;
   border: 2px solid white;
   border-radius: 5px;
   padding: 5px 12px;
   cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contener button:hover {
   background-color: #28a745;
+  color: white;
 }
 
 .contener button a {
   color: inherit;
   text-decoration: none;
+  font-weight: 600;
+}
+  
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+.navbar {
+    background-color: transparent; 
+    color: #ffffff; 
+    padding: 40px 0; 
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+.navbar .container {
+    display: flex;  
+    justify-content: space-between; 
+    align-items: center; 
+    margin: auto 60px;
+}
+.container .menu
+{
+    display: flex;
+}
+.menu {
+    list-style: none;
 }
 
-/* BLOC TITRE */
-.bloque {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(im2.jpg) center/cover no-repeat;
+.menu li {
+    margin:  auto 20px;    
+}
+
+.menu a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    
+}
+.menu a:hover {
+    color: #c21919; 
+    font-size: 18px; 
+    border:  1px solid #8a1212;
+}
+.libelle_resto h1 {
+    font-size: 24px; 
+}
+  
+  
+  
+  .bloque{
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      width: 100%;
+      height: 100px;
+      background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(im2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 90vh;
+      z-index: 1;
+      
+  }
+    
+    .nom h2{
+      margin-top: 150px;
+      font-size: 60px;
+      color: #cad5e4ec;
+      text-align: center;
+    } 
+
+ h2
+{
   text-align: center;
-  padding: 150px 20px;
+        font-size: 30px;
+        color: orangered ;
 }
 
-.nom h2 {
-  font-size: 60px;
-  color: #cad5e4ec;
+.mot {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
 }
 
-h2 {
-  text-align: center;
-  font-size: 30px;
-  color: orangered;
-  margin: 40px 0 20px;
-}
-
-/* DIAPORAMA */
-.diaporama {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  scroll-snap-type: x mandatory;
-}
-
-.diapo {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-}
-
-.diapo img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 5px;
-}
-
-/* FOOTER */
-.Pied_de_Page {
-  background-color: #1E1E2F;
-  padding: 20px;
-  color: white;
+.social ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
 }
 
 .mon_bloc {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin: auto 20em;
 }
 
-.mon_bloc h3 {
-  margin-bottom: 10px;
+.mon_bloc li {
+    list-style-type: none;
 }
 
-.logo img {
-  height: 25px;
-  width: 25px;
+.social li {
+    margin: auto 20px;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
-  .nom h2 {
-    font-size: 40px;
-  }
 
-  .contener {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .dflex {
-    flex-direction: column;
-  }
-
-  .diapo img {
-    max-width: 100%;
-  }
-
-  .mon_bloc {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .nom h2 {
-    font-size: 28px;
-  }
-
-  h2 {
+.social h3 {
     font-size: 24px;
-  }
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+.hours {
+    text-align: center; 
+}
+.hours h3 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    
+}
+
+.hours p {
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+.hours a{
+    color: #ffe66D;
+}
+.hours a : hover{
+    color: coral;
+}
+.logo img {
+    height: 25px;
+    width: 25px;
+    
+}
+#a {
+    border-bottom: 5px solid rgba(156, 15, 15, 0.877);
+}
+.diaporama img {
+    padding: 0;
+    width: 100vh;
+    height: 75vh; 
+    background-size: cover; 
+    animation-duration:  25s; 
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+}
+
+.diaporama{
+    display: flex;
+    overflow: hidden;  
+ }
+
+ @keyframes mesImages{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-200vh);
+    }
+    50%{
+        transform: translateX(-400vh);
+    }
+    75%{
+        transform: translateX(-600vh);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+.content {
+    background-color: #f4f4f457; 
+    padding: 50px 0; 
+    text-align: center; 
+    
+}
+
+.content h2 {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+.Pied_de_Page {
+    width: 100%;
+    background-color: #1E1E2F; 
+    color:  #f4f4f457; 
+    height: auto;
+    padding-bottom: 0;
+}
+
+.mot {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.mon_bloc {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin: auto 20em;
+}
+
+.mon_bloc li {
+    list-style-type: none;
+}
+
+.social li {
+    margin: auto 20px;
+}
+
+
+.social h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hours {
+    text-align: center; 
+}
+.hours h3 {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    
+}
+
+.hours p {
+    font-size: 18px; 
+    margin-bottom: 10px; 
+}
+.logo img {
+    height: 25px;
+    width: 25px;
+    
+}
+#a {
+    border-bottom: 5px solid rgba(156, 15, 15, 0.877);
+}
 
 
 </style>
